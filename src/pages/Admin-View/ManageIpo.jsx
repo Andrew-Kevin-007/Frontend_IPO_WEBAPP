@@ -163,6 +163,7 @@ const Container = styled.div`
   display: flex;
   height: 100vh;
   background: #f8f9fa;
+  padding-top:60px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -241,6 +242,11 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+  padding-top:50px;
+  width:625px;
+  height:32px;
+
+  color:rgba(98, 123, 135, 1);
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -253,6 +259,10 @@ const SearchWrapper = styled.div`
   align-items: center;
   background: white;
   padding: 8px;
+  width:500px;
+  height:32px;
+
+  
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -265,6 +275,7 @@ const SearchBar = styled.input`
   border: none;
   outline: none;
   margin-left: 10px;
+  color:rgba(246, 246, 251, 1);
 
   @media (max-width: 768px) {
     width: 100%;
@@ -282,8 +293,11 @@ const UserProfile = styled.div`
 `;
 
 const Title = styled.h2`
-  color: #2b2d42;
+  color:rgba(31, 56, 76, 1);
   margin-top: -20px;
+  font-size:18px;
+  font-weight:500;
+  line-height:23px;
 
   @media (max-width: 768px) {
     font-size: 18px;

@@ -24,8 +24,8 @@ const App2 = () => {
     <div className="app-container">
       <div className="content">
         <div className="badge-container">
-          <span className="badge new">NEW</span>
-          <span className="badge version">App 2.0 →</span>
+          <span className="badge-new">NEW</span>
+          <span className="badge-version">App 2.0 →</span>
         </div>
         <h1 className="title">
           Free & Open <br />
@@ -36,7 +36,9 @@ const App2 = () => {
           Thousands of traders and investors in India use our <br />
           stable and reliable mobile app regularly.
         </p>
+        <h2 className="get">Get early access</h2>
         <div className="early-access">
+          
           <input
             type="text"
             placeholder="+91  Enter mobile number"

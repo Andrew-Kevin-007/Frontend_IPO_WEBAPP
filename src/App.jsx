@@ -81,6 +81,7 @@ function App() {
         <Route path="/analaytics" element={<Analytics/>} />
         <Route path="/mainhome" element={<MainHome/>} />
       </Routes>
+      
     </>
   );
 }

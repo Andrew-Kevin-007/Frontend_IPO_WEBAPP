@@ -8,37 +8,46 @@
   top: 750px;
   position: absolute;
   height: auto;
-  display: flex;
+ 
   flex-direction: row;
+  width: 1514px;
+  height: 307px;
+  
 
 }
 
 .left-section {
-  max-width: 50%;
+  width: 356px;
+  height: 313px;
   margin-left: 10%;
   margin-top: 10px;
 
 }
 
 .subtitle {
-  color: gray;
+  color: rgba(154, 154, 154, 1);
+  width: 292px;
+  height: 36px;
+  font-weight: 500;
   font-size: 24px;
+  text-align: start;
 }
 
 .highlight-text {
-  font-size: 32px;
+  font-size: 64px;
   font-weight: bold;
+  text-align: start;
 }
 
 .purple {
-  color: purple;
-  font-size: 40px;
+  color: rgba(173, 0, 255, 1);
+  font-size: 64px;
 }
 
 .bold {
   font-weight: bold;
-  font-size: 40px;
-  color: black;
+  font-size: 64px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .right-section {

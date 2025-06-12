@@ -4,6 +4,67 @@
     margin: 1%;
     margin-top: 10%;
    
+  } 
+
+  .heading-2{
+    font-size: 44px;
+    font-weight: 500;
+    font-style: bold;
+    padding-top: 70px;
+    padding-left: 110px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+
+
+
+  .para-2{
+    font-weight: 500;
+    font-size: 24px;
+    font-style: poppins;
+    color: rgba(255, 255, 255, 1);
+    height: 216px;
+    width: 980px;
+    padding-top: 5px;
+    padding-left: 110px;
+    text-align: start;
+    
+  }
+
+  .freq-1{
+    width: fixed(1440px);
+    height: fixed(925px);
+    gap: 8px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .traders-talk{
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    padding-top: 90px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(106, 117, 130, 1);
+  }
+
+
+  .container-big{
+    width: 1478px;
+    height: 614px;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 32px;
+
+  }
+
+  .home-about {
+   text-align: start;
+   font-size: 16px;
+   color: #4a90e2;
+   font-style: poppins;
+   font-weight: 500;
+   padding-top: 40px;
   }
   
   .intro-section {

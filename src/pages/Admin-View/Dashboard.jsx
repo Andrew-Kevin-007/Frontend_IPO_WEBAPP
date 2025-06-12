@@ -4,6 +4,7 @@ import { FiSearch, FiSettings, FiHelpCircle } from "react-icons/fi";
 import { AiOutlineUser, AiOutlineAppstore } from "react-icons/ai";
 import { BsGraphUp, BsBuilding } from "react-icons/bs";
 import axios from "axios";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   const [ipos, setIpos] = useState([]);
@@ -68,6 +69,7 @@ const Dashboard = () => {
     <Container>
       <Sidebar>
         <Logo>Bluestock Fintech</Logo>
+        <h3 className="menu-1">MENU</h3>
         <Menu>
           <MenuItem className="active">
             <AiOutlineAppstore /> Dashboard
@@ -84,6 +86,7 @@ const Dashboard = () => {
           </MenuItem>
         </Menu>
         <Others>
+          <h2 className="others">OTHERS</h2>
           <MenuItem>
             <FiSettings /> Settings
           </MenuItem>
@@ -108,8 +111,14 @@ const Dashboard = () => {
         </Header>
 
         <DashboardSection>
+          <h1 className="iop">Dashboard</h1>
+          <h1 className="iop-1">IOP Dashboard India</h1>
+          <h4 className="ipo-2">20 IPO in Gain</h4>
           <DashboardContent>
+            
             <BubbleChart>
+              
+              
               <Bubble className="total">
                 {totalIpos}
                 <br />
@@ -129,6 +138,13 @@ const Dashboard = () => {
 
             <QuickLinks>
               <h3>Quick Links</h3>
+              <p className="para">Adipiscing elit, sed do eiusmod tempor</p>
+              <div className="list-1">
+                <li >NSE India</li>
+                <li>BSE India</li>
+                <li>SEBI</li>
+                <li>Money Control</li>
+              </div>
               <ul>
                 {quickLinks.map((link, index) => (
                   <li key={index}>
@@ -146,13 +162,13 @@ const Dashboard = () => {
               </DonutChart>
               <IPOList>
                 <IPOListItem>
-                  <span>Upcoming:</span> {upcomingIpos}
+                  <span>Upcoming:15</span> {upcomingIpos}
                 </IPOListItem>
                 <IPOListItem>
-                  <span>New Listed:</span> {newListedIpos}
+                  <span>New Listed:25</span> {newListedIpos}
                 </IPOListItem>
                 <IPOListItem>
-                  <span>Ongoing:</span> {ongoingIpos}
+                  <span>Ongoing:2</span> {ongoingIpos}
                 </IPOListItem>
               </IPOList>
             </MainBoardIPO>
@@ -200,6 +216,8 @@ const Container = styled.div`
   display: flex;
   height: 100vh;
   background: #f9f9f9;
+  padding-top: 30px;
+  
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -208,10 +226,12 @@ const Container = styled.div`
 
 const Sidebar = styled.aside`
   width: 250px;
-  background: #2c3e50;
-  padding: 20px;
-  color: white;
-
+  background:rgba(241, 242, 247, 1);
+  padding: 30px;
+  color: rgba(39, 50, 64, 1);
+  padding-left: 40px;
+  padding-top: 90px;
+  font-size:12px;
   @media (max-width: 768px) {
     width: 100%;
     text-align: center;
@@ -220,11 +240,12 @@ const Sidebar = styled.aside`
 `;
 
 const Logo = styled.div`
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
   margin-bottom: 30px;
   margin-top: 20px;
-  color: #3498db;
+  color:rgba(90, 103, 186, 1);
+  
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -298,14 +319,15 @@ const Header = styled.header`
 `;
 
 const SearchBar = styled.input`
-  padding: 10px;
-  width: 200px;
+  padding: 15px;
+ 
+  width: 625px;
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s ease-in-out;
   &:focus {
-    border-color: #3498db;
+    border-color:rgba(98, 123, 135, 1);
   }
 
   @media (max-width: 768px) {
@@ -327,6 +349,8 @@ const UserProfile = styled.div`
 
 const DashboardSection = styled.section`
   background: #fff;
+  width: 1300px;
+  // height:321px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -351,7 +375,9 @@ const DashboardContent = styled.div`
 
 const BubbleChart = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 30px;
+  padding-top:100px;
+  padding-left:30px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -395,7 +421,10 @@ const Bubble = styled.div`
 `;
 
 const QuickLinks = styled.div`
-  background: #fff;
+  background:rgba(219, 229, 235, 1);
+  width:312px;
+  height:310px:
+  
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -417,8 +446,11 @@ const QuickLinks = styled.div`
 `;
 
 const MainBoardIPO = styled.div`
-  background: #fff;
+  background:rgba(219, 229, 235, 1);
+  width:362px;
+  height:322px:
   padding: 20px;
+  display: "flex"; justifyContent: "center"; alignItems: "center";
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   animation: ${fadeIn} 0.5s ease-in-out;
@@ -431,7 +463,8 @@ const MainBoardIPO = styled.div`
 const DonutChart = styled.div`
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, #3498db 60%, #f0f0f0 40%);
+  
+  background: radial-gradient(circle, rgba(133, 147, 237, 1) 60%, #f0f0f0 40%);
   border-radius: 50%;
   position: relative;
   animation: ${rotate} 5s linear infinite;

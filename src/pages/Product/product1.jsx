@@ -8,12 +8,14 @@ function Product1() {
       <section className="hero">
         <div className="hero-text">
           <h1>Best-in-class Technology & Platforms</h1>
-          <p>
+
+          <p className="hero-text-p">
             Our products & services aim to help active traders & investors in
             India gain a winning edge in the stock markets.
           </p>
         </div>
-        <div className="hero-image"></div>
+
+        {/* <div className="hero-image"></div> */}
       </section>
 
 
