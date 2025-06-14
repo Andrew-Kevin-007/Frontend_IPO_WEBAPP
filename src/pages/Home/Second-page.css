@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  width: 100%;
+  width: 1514px;
   height: 307px;
   top: 750px;
   position: absolute;
@@ -34,19 +34,20 @@
 }
 
 .highlight-text {
-  font-size: 64px;
+  font-size:10px;
+  
   font-weight: bold;
   text-align: start;
 }
 
 .purple {
   color: rgba(173, 0, 255, 1);
-  font-size: 64px;
+  /* font-size: 64px; */
 }
 
 .bold {
   font-weight: bold;
-  font-size: 64px;
+  /* font-size: 64px; */
   color: rgba(0, 0, 0, 1);
 }
 

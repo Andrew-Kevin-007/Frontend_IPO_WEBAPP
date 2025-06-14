@@ -73,15 +73,17 @@ const css = `
     text-align: center;
     padding: 40px 20px;
     position: relative;
-    top: 3250px;
+    top: 3800px;
     overflow: hidden;
   }
 
   .heading {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 36px;
+    font-weight: 600;
     color: black;
     margin-bottom: 20px;
+    padding-left:80px;
+    
     text-shadow: 0px 0px 10px rgba(94, 172, 255, 0.7);
   }
 
@@ -89,6 +91,7 @@ const css = `
     display: flex;
     overflow: hidden;
     width: 100%;
+    
   }
 
   .scrollWrapper {

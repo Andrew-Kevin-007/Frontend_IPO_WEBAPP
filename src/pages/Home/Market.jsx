@@ -41,7 +41,7 @@ const lowStocks = [
 const MarketMovers = () => {
   const [activeTab, setActiveTab] = useState("NSE");
 
-  return (
+  return ( 
     <motion.div
       className="market-movers"
       initial={{ opacity: 0, y: 50 }}

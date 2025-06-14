@@ -6,11 +6,11 @@ const SecondPage = () => {
     <div className="second-page">
       <div className="left-section">
         <p className="subtitle">Built for a growing India.</p>
-        <h2 className="highlight-text">
-          <span className="purple">It’s easy</span> <br />
-          <span className="bold">It’s powerful</span> <br />
-          <span className="purple">It’s beautiful</span>
-        </h2>
+        <div className="highlight-text">
+          <h1 className="purple">It’s easy</h1> <br />
+          <h1 className="bold">It’s powerful</h1> <br />
+          <h1 className="purple">It’s beautiful</h1>
+        </div>
       </div>
 
      

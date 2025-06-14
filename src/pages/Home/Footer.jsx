@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram, FaTelegra
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer"> 
       <div className="footer-container">
 
 
@@ -79,12 +79,12 @@ const Footer = () => {
             <FaTelegramPlane />
           </div>
           <div className="footer-brand">
-            <img src="https://s3-alpha-sig.figma.com/img/f2bb/0d5a/c303809a2994263415f5532bb2d2011d?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MrPwwht2Z6xUgoZ0BiqbFk8rSBeFZ0pZXpiQDDDsg3XM6amDb~jvzS7GTquaYjnwNSzC876BnXue3MbZiX7e-bCbLUZ1~La48mecsZUEg3Ut-yZRur2GdXBiqSLBfJVu~5jdZhl9OBe~e5en9crZ-VvbQ2Yy9y2OpbYvr5rrfnqlL1u10Q7CdX1J45bTF1~LF~tClnNfcxwK0wwUEYLWFqNBYfBXM2eppGda48WoeHgGWwHbXiEqrD16bOTgGq0gV8xohu5o6lWv6gmH432Hu3w9NwWtlJLWgryhZtSsBodLSWtFKSeqgj~yUT0SDvNvEj-Aya4GoX9xel6Zzv3wCQ__" alt="Bluestock Logo" />
+            <img src="https://th.bing.com/th/id/OIP.fzMBMaB-5q2MLmGM_MCZUQHaHa?w=150&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Bluestock Logo" />
             <p>Bluestock Fintech<br />Pune, Maharashtra</p>
           </div>
           <div className="footer-info">
             <p>MSME Registration No:<br /> UDYAM-MH-01-0138001</p>
-            <img src="https://s3-alpha-sig.figma.com/img/8d45/5001/a95002faa088ab5477fe53d16b87c4b7?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=E0mYtLBpKMCpTpeIBKI48Nf458pry5rwPyrrqa2nW0WgY~7W464P-FE59Li~Y1I5cGywBmoxOLjsrEPU4uvlaHYursNUVqE1sQuDtHKNfuVD3n7ntQfEmwZ7Frgz-fRGXZzRWy9PskGaZAErAKJugqr2qr4Ruajnb6BbfWqE8MH~zROipCICWQaH9oexU1o619PbdgcJfTf9GpvLaHd1bMX9JfvXDTLrwDgRLPjkpWsd~VGnAt1COStm1qakY6LXNkkvg6~ZBu46Fc5VEoDdOTTQVggMuQrv~VAYO~0bbib2p4TRQxhRvfACtQMfPO6swtY6IrdUNDvZHyWOXvlbBQ__" alt="Startup India Logo" />
+            <img src="https://th.bing.com/th/id/OIP.dBfYqMWJtOexZ1H_o3C89AHaB6?w=306&h=90&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Startup India Logo" />
           </div>
         </div>
 

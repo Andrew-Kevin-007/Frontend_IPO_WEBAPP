@@ -2,8 +2,8 @@
     background: #7EFED30F;
     width: 99%;
     position: absolute;
-    top: 4490px;
-    height: 500px;
+    top: 5700px;
+    height: 654px;
   }
   
   .content {
@@ -26,15 +26,21 @@
   }
   
   .text p {
-    font-size: 1rem;
+    font-size: 28px;
     color: #000000;
+    font-weight: 700;
 
   }
    .name {
     color: rgb(63, 247, 112);
+    margin: 10px;
+    /* padding-bottom: 20px; */
+    text-align: center;
+    justify-content: center;
+
    }
   .text h2 {
-    font-size: 2rem;
+    font-size: 36;
     color: #1a53ff;
     font-weight: bold;
   }
@@ -56,9 +62,10 @@
   }
   
   .dropdown img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    padding-top: 5px;
   }
   
   .dropdown select {
@@ -77,8 +84,16 @@
     font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   
+  .chart {
+    margin-left: 450px;
+    /* width: 650px; */
+    left: 500px;
+  }
+
   .image img {
     position: absolute;
     top: 10%;

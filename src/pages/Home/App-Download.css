@@ -7,8 +7,11 @@
     width: 99.5%;
     height: auto;
     position: absolute;
-    top: 2900px;
-    background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+    top: 3700px;
+    width: 1920px;
+    /* height: 186px; */
+    height: 359px;
+    background: linear-gradient(45deg,rgba(239, 244, 255, 1)) !important;
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s ease-out forwards;
@@ -28,8 +31,11 @@
 
 .app-banner {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 1920px;
+    height: 186px;
+    /* flex-direction: column; */
+    align-items: start;
+    text-align: start;
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInLeft 1s ease-out forwards 0.3s;
@@ -47,27 +53,35 @@
 }
 
 .app-banner h2 {
+    padding-left: 150px;
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(255, 194, 194);
+    color: rgba(0, 0, 0, 1);
+    font-size: 41px;
+    font-weight: 700;
 }
 
 .highlight {
-    color: blueviolet;
+    color: rgba(63, 82, 255, 1);
+    font-size: 41px;
+    font-weight: 700;
 }
 
 .download-text {
-    color: gray;
-    font-size: 1rem;
-    margin-top: 8px;
+    color: rgba(154, 154, 154, 1);
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 115px;
+    padding-left: 50px;
 }
 
 
 
 .store-buttons {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 50px;
+    margin-top: 80px;
+    padding-left: 150px;
     opacity: 0;
     transform: translateX(50px);
     animation: slideInRight 1s ease-out forwards 0.5s;
@@ -85,7 +99,8 @@
 }
 
 .store-icon {
-    width: 150px;
+    width: 238px;
+    height: 59px;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -118,6 +133,7 @@
 .user-images {
     display: flex;
     gap: -10px;
+    
 }
 
 .user-avatar {
@@ -141,11 +157,12 @@
 .rating {
     margin-top: 10px;
     font-size: 1.2rem;
+
 }
 
 .rating-text {
-    font-size: 1rem;
-    color: gray;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 768px) {
@@ -171,6 +188,8 @@
     .user-avatar {
         width: 40px;
         height: 40px;
+        border: 6px;
+        
     }
 
     .rating {

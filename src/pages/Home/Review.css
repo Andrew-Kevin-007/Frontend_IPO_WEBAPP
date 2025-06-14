@@ -1,9 +1,17 @@
 .review-section {
     text-align: center;
     position: absolute;
-    top: 3270px; /* Adjust this value as needed */
-    width: 99%;
+    top: 4567px; /* Adjust this value as needed */
+    width: 75%;
+    height: 475px;
+    left: 89px;
+    
 }
+
+/* .heading {
+    font-size: 36px;
+} */
+
 .review-section h2 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -18,6 +26,7 @@
 .reviews-container {
     display: flex;
     gap: 20px;
+    
     overflow-x: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
