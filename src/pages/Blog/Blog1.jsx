@@ -18,15 +18,21 @@ const blogPosts = [
 
 function Blog1() {
   return (
+
     <div className="blog-container">
+      <div className="breadcrumb">
+        <span className="breadcrumb-home">Home</span>
+        <span className="breadcrumb-arrow">{'>'}</span>
+        <span className="breadcrumb-current">Blogs</span>
+      </div>
       <h1>BLUESTOCK BLOG</h1>
       <div className="blog-grid">
-        
+
         {blogPosts.map((post, index) => (
           <div className="blog-card" key={index}>
             <a href="/DetailedBlog">
-            <div className="blog-image">
-            </div>  </a>
+              <div className="blog-image">
+              </div>  </a>
             <div className="blog-content">
               <h3>{post.title}</h3>
               <p>{post.date} • {post.readTime}</p>

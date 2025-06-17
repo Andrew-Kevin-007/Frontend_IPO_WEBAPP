@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import './App.css';
+import './index.css'
 import AppDownload from './pages/Home/App-Download.jsx';
 import App2 from './pages/Home/App2.0.jsx';
 import BottomSection from './pages/Home/BottomSection.jsx';

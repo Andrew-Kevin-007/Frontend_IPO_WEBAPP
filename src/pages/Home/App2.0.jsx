@@ -25,7 +25,7 @@ const App2 = () => {
       <div className="content">
         <div className="badge-container">
           <span className="badge-new">NEW</span>
-          <span className="badge-version">App 2.0 →</span>
+          <span className="badge-version ">App 2.0 →</span>
         </div>
         <h1 className="title">
           Free & Open <br />

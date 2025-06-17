@@ -54,12 +54,13 @@
   font-size: 21px;
   font-weight: 500;
   letter-spacing: 0%;
-  width: 646px;
-  height: 96px;
+  width: 1150px;
+  height: 106px;
   /* top: 1450px;
   left: 619px; */
   text-align: center;
-  padding-left: 30%;
+  /* padding-left: 30%; */
+  padding-left: 550px;
 }
 
 .card-sections {
@@ -81,6 +82,7 @@
   position: relative;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   animation: floatUp 3s infinite alternate ease-in-out;
+  -webkit-animation: floatUp 3s infinite alternate ease-in-out;
 }
 
 @keyframes floatUp {
@@ -89,7 +91,11 @@
   }
   to {
     transform: translateY(-10px);
-  }
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
 }
 
 .card1 {

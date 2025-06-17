@@ -22,16 +22,30 @@ const Forgot = () => {
   };
 
   return (
+    <div style={{
+      width:"400px",
+      height:"416px",
+      paddingLeft:"700px",
+      gap:"36px",
+     
+    }}>
     <Container>
-      <Logo src="https://s3-alpha-sig.figma.com/img/a384/6617/a1755a8fd24fe96ee0699859b1972ef1" alt="Bluestock Logo" />
+      
+
+      <Form>
+
+        <Logo src="https://bluestock.in/static/assets/logo/logo.jpg" alt="Bluestock Logo" style={{
+        width:"290px",
+        height:"36px",
+      }}/>
+
       <Title>Forgot Password?</Title>
       <Subtitle>Enter your email address to get the password reset link.</Subtitle>
 
-      <Form>
         <Label>Email Address</Label>
         <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="hello@bluestock.in" />
         <ResetButton onClick={handlePasswordReset} disabled={loading}>
-          {loading ? "Sending..." : "Send Reset Link"}
+          {loading ? "Sending..." : "Password Reset"}
         </ResetButton>
 
         {message && <Message>{message}</Message>}
@@ -39,6 +53,7 @@ const Forgot = () => {
         <BackToLogin onClick={() => (window.location.href = "/login")}>Back to login</BackToLogin>
       </Form>
     </Container>
+    </div>
   );
 };
 
@@ -59,14 +74,17 @@ const Logo = styled.img`
 `;
 
 const Title = styled.h2`
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 10px;
+  padding-left: 90px;
+  line-height:40px;
+  color:rgba(25, 29, 35, 1);
 `;
 
 const Subtitle = styled.p`
-  font-size: 14px;
-  color: #666;
+  font-size: 18px;
+  color: rgba(102, 102, 102, 1);
   margin-bottom: 20px;
 `;
 
@@ -80,28 +98,30 @@ const Form = styled.div`
 const Label = styled.label`
   display: block;
   text-align: left;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
   margin-top: 15px;
+  color: rgba(25, 29, 35, 1);
 `;
 
 const Input = styled.input`
   width: 100%;
   padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid rgba(208, 213, 221, 1);
+  border-radius: 8px;
+  background: white;
 `;
 
 const ResetButton = styled.button`
   width: 100%;
   padding: 12px;
-  background: #6a5acd;
+  background: rgba(93, 18, 210, 1);
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 15px;
   cursor: pointer;
 
@@ -122,11 +142,13 @@ const Message = styled.p`
 `;
 
 const BackToLogin = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 15px;
-  color: #666;
+  color: rgba(135, 135, 135, 1);
   cursor: pointer;
-  text-decoration: underline;
+  font-weight : 600;
+  line-height: 24px;
+  // text-decoration: underline;
 
   &:hover {
     color: #333;

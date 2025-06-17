@@ -55,13 +55,23 @@ const SignUp = () => {
   };
 
   return (
+    <div style={{
+      width:"400px",
+      height:"764px",
+      paddingLeft:"700px",
+      gap:"36px",
+    }}>
     <Container>
-      <Logo src="https://s3-alpha-sig.figma.com/img/a384/6617/a1755a8fd24fe96ee0699859b1972ef1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hiWjiD0Ndkb15El3-7mPNf2gXKshX-wrfm2BYd~bkJ-r7FOtsUfDGeYpjsO~sMlbWm7kz6atlc2V2ATotGuYnsQKZBkS82S~SDKMR3qOU61G-I9b8jTK87uBNue8IzOmNXudFpsJ1RI6WguonPJTKzOVm6lftlhouX93JdFh3PvgfUd2GatC-jCw8wTHDzfSkeleq7ovXzIkmzT23-vR~pU24j~JdXihRcmmq-qyFpfXZ4ed2rlgHZbR8S3tjGXKS4aKkv0t4LB~gVE37xwIVPhecPnn6kvbNQx3FQqmbaNza658Dla-EDCeTT~Efs-dn2aiY9aXrZtPYxn8L3P9mA__" alt="Bluestock Logo" />
+      
+
+      <Form onSubmit={handleSignUp}>
+        <Logo src="https://bluestock.in/static/assets/logo/logo.jpg" alt="Bluestock Logo" style={{
+        width:"290px",
+        height:"36px",
+      }}/>
       <Title>Create an account</Title>
       {error && <ErrorMessage>{error}</ErrorMessage>}
       {success && <SuccessMessage>{success}</SuccessMessage>}
-
-      <Form onSubmit={handleSignUp}>
         <Label>Name</Label>
         <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your Name" />
 
@@ -69,7 +79,15 @@ const SignUp = () => {
         <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="hello@bluestock.in" />
 
         <Label>Password</Label>
-        <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••" />
+        <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••••••••" />
+
+        <p style={{
+          fontSize:"14px",
+          fontWeight:"300",
+          lineHeight:"20px",
+          color:"rgba(25, 29, 35, 1)",
+          textAlign:"start",
+        }}>By continuing, you agree to our terms of service.</p>
 
         <ReCAPTCHA>
           <Checkbox type="checkbox" checked={isRobotChecked} onChange={() => setIsRobotChecked(!isRobotChecked)} />
@@ -77,8 +95,26 @@ const SignUp = () => {
         </ReCAPTCHA>
 
         <SignUpButton type="submit">Sign up</SignUpButton>
+        <p style={{
+          color:"gray",
+          padding:"8px",
+          gap:"8px",
+          fontSize:"14px",
+        }}>or sign up with</p>
+
+        <p style={{
+          color:"gray",
+          padding:"8px",
+          gap:"8px",
+          fontSize:"20px",
+        }}>Continue with Google</p>
+
       </Form>
+      
     </Container>
+    </div>
+   
+
   );
 };
 
@@ -86,22 +122,25 @@ export default SignUp;
 
 // Styled Components
 const Container = styled.div`
-  max-width: 400px;
-  margin: auto;
+  // max-width: 400px;
+  // margin: auto;
   text-align: center;
   padding: 100px 20px;
+  
 `;
 
 const Logo = styled.img`
   width: 140px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 `;
 
 const Title = styled.h2`
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #333;
+  color: rgba(25, 29, 35, 1);
+  padding-left: 80px;
+  line-height: 28px;
 `;
 
 const Form = styled.form`
@@ -114,18 +153,21 @@ const Form = styled.form`
 const Label = styled.label`
   display: block;
   text-align: left;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
   margin-top: 15px;
+  color: rgba(25, 29, 35, 1);
 `;
 
 const Input = styled.input`
   width: 100%;
   padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
+  border: 1px solid rgba(75, 87, 104, 1);
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  color:rgba(153, 157, 163, 1);
 `;
 
 const Checkbox = styled.input`
@@ -136,6 +178,9 @@ const ReCAPTCHA = styled.div`
   display: flex;
   align-items: center;
   margin-top: 15px;
+  color:black;
+  font-size:16px;
+  font-weight:300px;
 `;
 
 const SignUpButton = styled.button`

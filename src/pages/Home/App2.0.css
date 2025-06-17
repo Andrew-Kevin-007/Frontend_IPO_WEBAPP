@@ -5,12 +5,13 @@
   background-color: none;
   position: absolute;
   top: 11%;
-  height: 651px;
+  /* height: 671px; */
   animation: fadeIn 1s ease-in-out;
   background: url("https://bluestock.in/assets/img/hero-bg.png");
   background-size: cover;
   background-position: center;
   animation: backgroundMove 10s linear infinite alternate;
+  top: 200px;
 }
 
 @keyframes backgroundMove {
@@ -117,12 +118,14 @@
   text-align: start;
   /* width: 541px;
   height: 64px; */
+  padding-top: px;
 }
 
 .get{
   font-size: 15px;
   font-weight: 600;
   color: rgba(0, 0, 0, 1);
+  padding-bottom: px;
 }
 
 @keyframes slideInRight {
@@ -139,7 +142,7 @@
 .early-access {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 5px;
   color:rgba(102, 115, 132, 1);
   font-size: 15px;
   font-weight: 600;
