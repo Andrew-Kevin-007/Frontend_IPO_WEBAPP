@@ -29,7 +29,7 @@ const Ipo3 = () => {
 
 
       <section className="new-listed">
-        <h2>New Listed</h2>
+        <h2 className="text-1">New Listed</h2>
         <p className="new-paragraph">
           Companies that have been listed recently through an IPO. Find their
           listing gains and returns here.

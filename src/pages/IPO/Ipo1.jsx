@@ -20,7 +20,7 @@ const IPO1 = () => {
   return (
     <div className="ipo-container">
       <h2>IPO</h2>
-      <p>Following is the list of companies for IPO as of today.</p>
+      <p className="text-2xl">Following is the list of companies for IPO as of today.</p>
 
       <div className="ipo-header">
         <h3>Upcoming</h3>

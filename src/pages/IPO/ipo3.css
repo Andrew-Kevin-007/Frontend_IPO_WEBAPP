@@ -12,6 +12,12 @@
     font-size: 20px;
     margin: 8px;
   }
+
+  .text-1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+  }
   
 .new-paragraph {
     display: flex;
@@ -20,7 +26,7 @@
     color: #333;
     font-size: 14px;
     margin: 8px;
-    
+    padding-left: 8px;
 }
 
 
@@ -107,7 +113,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    
+    text-align: start;
   }
   
   .ipo-news, .ipo-analysis {
@@ -119,9 +125,19 @@
     font-size: 16px;
     color:rgba(0, 0, 0, 1) ;
     margin: 20px;
+    text-align: start;
   }
   
   .ipo-news h3, .ipo-analysis h3 {
     color:rgba(0, 0, 0, 1);
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
   }
   
+
+  .ipo-news p, .ipo-analysis p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;padding-top: 15px;
+  }

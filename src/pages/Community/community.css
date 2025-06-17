@@ -2,7 +2,7 @@
   font-family: Arial, sans-serif;
   margin: 5%;
 
-  width: 95%;
+  width: 100%;
   margin-top: 10%;
 }
 
@@ -16,7 +16,7 @@
   align-items: start;
   /* justify-content: space-between; */
   text-align: start;
-  gap: 20px;
+  gap: 220px;
   padding-top: 50px;
 }
 
@@ -60,12 +60,12 @@
   position: absolute;
   height: 400px;
   width: 400px;
-  align-items: center;
-
+  align-items: end;
+  padding-left: px;
 }
 
 .club-right {
-  display: flex;
+  display:flex;
   gap: 20px;
   /* align-items: flex-end; */
   /* flex: 1;
@@ -96,11 +96,12 @@
 .trading-club {
   text-align: start;
   margin-top: 40px;
-  width: 999px;
+  width: 1299px;
   height: 354px;
   left: 377px;
   padding-left: 280px;
   display: flex;
+  gap: 50px;
 }
 
 .trading-club h3 {
@@ -154,9 +155,9 @@
 
 .blue p {
   font-size: 15px;
-  width: 287px;
+  /* width: 287px; */
   text-align: center;
-  padding-left: 460px;
+  padding-left: 0px;
 }
 
 .chat-box{

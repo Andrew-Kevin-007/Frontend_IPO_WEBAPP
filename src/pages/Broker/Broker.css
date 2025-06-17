@@ -1,13 +1,17 @@
 .broker-details-container {
   margin-top: 6%;
-  width: 95%;
+  width: 1700px;
   text-align: center;
+  top: 449px;
+  padding-left: 80px;
 }
 
 .page-title {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 96px;
+  font-weight: 600;
   color: #6a5acd;
+  text-align: start;
+  padding-left: 0px;
 }
 
 .page-title span {
@@ -17,7 +21,7 @@
 .broker-details-card {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   padding: 20px;
   border-radius: 12px;
@@ -30,20 +34,34 @@
   transform: translateY(-5px);
 }
 
+.flex-1 {
+  display: flex;
+  
+}
+
 .broker-info {
-  flex: 1;
-  text-align: left;
+  flex: 5;
+  width: 1700px;
+  height: 569px;
+  /* display: flex; */
+  /* text-align: left; */
 }
 
 .broker-info h2 {
-  font-size: 24px;
-  margin-bottom: 5px;
+  font-size: 50px;
+  margin-bottom: 25px;
+  padding-top: 0px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
 }
 
 .rating {
   display: flex;
   gap: 5px;
-  color: gold;
+  color: rgba(250, 191, 53, 1);
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 25px;
 }
 
 .star-icon {
@@ -52,17 +70,25 @@
 
 .broker-info p {
   margin: 5px 0;
+  padding-left: 25px;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .free-account {
-  font-weight: bold;
-  color: #16a34a;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  font-size: 30px;
 }
 
 .buttons {
   margin-top: 10px;
   display: flex;
-  gap: 10px;
+  gap: 50px;
+  
+  padding-left: 25px;
 }
 
 .open-account,
@@ -71,29 +97,38 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 14px;
+  
+  font-size: 21px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
 }
 
 .open-account {
-  background-color: #4caf50;
-  color: white;
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
 }
 
 .learn-more {
-  background-color: #008cba;
-  color: white;
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
 }
 
 .broker-services,
 .broker-charges {
-  flex: 1;
-  text-align: left;
+  flex: 0;
+  text-align: start;
   padding: 10px;
+  padding-left: 100px;
+  gap: 50px;
+  /* width: 405px;
+  height: 181px;   */
 }
 
 .broker-services p,
 .broker-charges p {
   margin: 5px 0;
+  width: 205px;
+  padding-top: 40px;
 }
 
 .broker-charges strong {
@@ -130,6 +165,10 @@
 
   .broker-logo img {
     margin-top: 10px;
+    width: 335px;
+    height: auto;
+    padding-top: 300px;
+    align-items: center;
   }
 }
 

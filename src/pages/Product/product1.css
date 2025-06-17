@@ -12,6 +12,7 @@
     width: 1520px;
     height: 559px;
     top: 264px;
+    text-align: start;
   }
   
  
@@ -24,6 +25,7 @@
     padding-left: 20px;
     padding-top: 40px;
     color: rgba(0, 0, 0, 1);
+    text-align: start;
   }
   
   .hero-text-p {
@@ -37,6 +39,7 @@
     text-align: start;
     top: 694px;
     left: 94px;
+    text-align: start;
     
   }
   
@@ -156,13 +159,14 @@
   }
   
   .product-card h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    width: 213px;
-    height: 47px;
+    
+    /* margin: 10px 0;
+    width: 100px;
+    height: 47px; */
     font-size: 31px;
     font-weight: 600;
     color: rgba(0, 0, 0, 1);
+    padding-right: 50px;
   }
   
   .product-card p {
