@@ -1,6 +1,6 @@
 .broker-details-container {
   margin-top: 6%;
-  width: 1700px;
+  width: 100%;
   text-align: center;
   top: 449px;
   padding-left: 80px;
@@ -41,7 +41,7 @@
 
 .broker-info {
   flex: 5;
-  width: 1700px;
+  width: 600px;
   height: 569px;
   /* display: flex; */
   /* text-align: left; */
@@ -69,8 +69,8 @@
 }
 
 .broker-info p {
-  margin: 5px 0;
-  padding-left: 25px;
+  /* margin: 5px 0; */
+  /* padding-left: 25px; */
   display: flex;
   gap: 20px;
   padding-bottom: 15px;
@@ -117,8 +117,8 @@
 .broker-charges {
   flex: 0;
   text-align: start;
-  padding: 10px;
-  padding-left: 100px;
+  padding: 0px;
+  padding-left: 80px;
   gap: 50px;
   /* width: 405px;
   height: 181px;   */

@@ -130,17 +130,20 @@ const styles = {
   rating: {
     fontSize: "30px",
     fontWeight: "bold",
+    textAlign: "center",
+    paddingRight:"20px",
+    paddingTop:"20px"
   },
   stars: {
     marginBottom: "10px",
   },
   star: {
-    color: "#FFD700",
+    color: "rgba(250, 191, 53, 1)",
     marginRight: "5px",
   },
   button: {
-    backgroundColor: "#28a745",
-    color: "#fff",
+    backgroundColor: "rgba(69, 187, 188, 1)",
+    color: "rgba(255, 255, 255, 1)",
     padding: "10px",
     border: "none",
     borderRadius: "5px",

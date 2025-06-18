@@ -199,20 +199,23 @@
 .card-icons {
   display: flex;
   justify-content: start;
-  gap: 1rem;
+  gap: 100px;
   margin: 2rem 0;
   color: black;
+  padding-left: 10px;
 }
 
 .icon {
   background: #fff0db;
-  padding: 0.8rem;
+  /* padding: 0.8rem; */
   border-radius: 8px;
   font-size: 1rem;
   color: black;
   transition: transform 0.3s ease-in-out;
-  width: 206px;
+  /* width: 206px;
   height: 190px;
+  gap: 20px; */
+  
 }
 
 
@@ -257,8 +260,8 @@
 }
 
 .image1 {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 768px) {

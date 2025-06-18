@@ -75,6 +75,7 @@ const styles = {
     margin: "auto",
     fontFamily: "Arial, sans-serif",
     padding: "20px"
+    
   },
   title: {
     textAlign: "center",
@@ -87,7 +88,7 @@ const styles = {
     border: "1px solid #ddd",
     borderRadius: "8px",
     overflow: "hidden",
-    background: "#fff",
+    // background: "#fff",
     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)"
   },
   table: {
@@ -96,23 +97,26 @@ const styles = {
   },
   header: {
     display: "flex",
-    backgroundColor: "#f4f4f4",
+    // backgroundColor: "#f4f4f4",
     fontWeight: "bold"
   },
   prosHeader: {
     width: "50%",
-    background: "#d4edda",
+    background: "rgba(242, 229, 229, 1)",
     textAlign: "center",
-    padding: "15px"
+    padding: "15px",
+    color:"rgba(36, 87, 197, 1)"
   },
   consHeader: {
     width: "50%",
-    background: "#f8d7da",
+    background: "rgba(242, 229, 229, 1)",
     textAlign: "center",
-    padding: "15px"
+    padding: "15px",
+    color:"rgba(36, 87, 197, 1)"
   },
   content: {
     display: "flex"
+    
   },
   prosColumn: {
     width: "50%",
@@ -126,7 +130,8 @@ const styles = {
     padding: "15px",
     display: "flex",
     flexDirection: "column",
-    gap: "10px"
+    gap: "10px",
+    
   },
   prosItem: {
     display: "flex",
@@ -135,7 +140,8 @@ const styles = {
     background: "#f9f9f9",
     padding: "10px",
     borderRadius: "5px",
-    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)"
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
+    color:"rgba(0, 0, 0, 1)",
   },
   consItem: {
     display: "flex",
@@ -144,7 +150,8 @@ const styles = {
     background: "#fff5f5",
     padding: "10px",
     borderRadius: "5px",
-    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)"
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
+    color:"rgba(0, 0, 0, 1)"
   },
   successIcon: {
     color: "green",
