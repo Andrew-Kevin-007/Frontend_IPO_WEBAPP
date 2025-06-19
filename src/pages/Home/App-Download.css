@@ -4,11 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 99.5%;
+    width: 1700px;
     height: auto;
     position: absolute;
     top: 3700px;
-    width: 1920px;
+    /* width: 1920px; */
     /* height: 186px; */
     height: 359px;
     background: linear-gradient(45deg,rgba(239, 244, 255, 1)) !important;

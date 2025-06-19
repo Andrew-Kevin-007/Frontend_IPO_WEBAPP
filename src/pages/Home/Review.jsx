@@ -70,6 +70,7 @@ const Review = () => {
 
 const css = `
   .reviewSection {
+    width: 1700px;
     text-align: center;
     padding: 40px 20px;
     position: relative;
