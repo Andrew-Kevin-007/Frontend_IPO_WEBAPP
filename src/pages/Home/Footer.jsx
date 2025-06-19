@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram, FaTelegra
 
 const Footer = () => {
   return (
-    <footer className="footer"> 
+    <footer className="footer">
       <div className="footer-container">
 
 
@@ -22,11 +22,11 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Company</h4>
             <ul>
-            <li><a className="text1" href="/Carrers">Careers</a></li>
+              <li><a className="text1" href="/Carrers">Careers</a></li>
 
               <li>
-                <a className="text1" href= "/Contact">
-                   ContactUS
+                <a className="text1" href="/Contact">
+                  ContactUS
                 </a>
               </li>
               <li><a className="text1" href="/about">About Us</a></li>
@@ -52,8 +52,8 @@ const Footer = () => {
               <li><a className="text1" href="/MuthodFund">Muthod Fund</a></li>
               <li className="text1" >Sitemap</li>
               <li className="text1">Indian Indices</li>
-              <li className="text1">
-                <a href="/school">Bug Bounty Program</a>
+              <li >
+                <a className="text1" href="/school">Bug Bounty Program</a>
               </li>
             </ul>
           </div>
@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
 
-       
+
         <div className="footer-disclaimer">
           <p>
             Investment in securities markets are subject to market risks, read all the related documents carefully before investing as prescribed by SEBI. Issued in the interest of the investors.
