@@ -90,7 +90,7 @@ const CategoryCard = ({ title, desc, modules, views, icon }) => {
         <span>📙 {modules} Modules</span>
         <span>👁️ {views} views</span>
       </div>
-      <div className="text-blue-600 mt-2 font-medium text-sm">View Details &gt;&gt;</div>
+      <div className="text-blue-600 mt-2 font-medium text-sm"><a href="/TechnicalAnalysis">View Details &gt;&gt;</a></div>
     </div>
   );
 };
