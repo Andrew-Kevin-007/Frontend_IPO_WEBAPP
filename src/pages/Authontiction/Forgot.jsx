@@ -22,9 +22,9 @@ const Forgot = () => {
   };
 
   return (
-    <div style={{
-      width:"1200px",
-      height:"416px",
+   <div style={{
+      width:"100%",
+      height:"100%",
       paddingLeft:"700px",
       gap:"36px",
      

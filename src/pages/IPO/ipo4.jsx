@@ -96,7 +96,7 @@ const Ipo4 = () => {
           <div className="faq-item" key={index}>
             <div className="faq-question" onClick={() => toggleFAQ(index)}>
               {faq.question}
-              <span className="icon">{openIndex === index ? "−" : "+"}</span>
+              <span className="icon">{openIndex === index ? "-" : "+"}</span>
             </div>
             {openIndex === index && <div className="faq-answer">{faq.answer}</div>}
           </div>
