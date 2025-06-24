@@ -119,7 +119,7 @@ const styles = {
   heading: {
     fontSize: "35px",
     fontWeight: "600",
-    marginBottom: "20px",
+    marginBottom: "150px",
     color: "rgba(61, 61, 61, 1)",
     height : "117px",
     width : "727px",
@@ -163,8 +163,8 @@ const styles = {
     textAlign: "center",
    
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-    // height:"380px",
-    //  width: "480px",
+    height:"380px",
+     width: "380px",
   },
   statNumber: {
     fontSize: "40px",
@@ -233,6 +233,7 @@ const styles = {
     color: "#5b6efc",
     textDecoration: "none",
     fontWeight: "bold",
+    padding:"0px",
   },
   joinUsContainer: {
     background: "rgba(99, 133, 255, 1)",
@@ -246,7 +247,7 @@ const styles = {
     width:"1596px",
     // top:"1883px",
     // left:"184px",
-      
+      paddingTop:"0px",
   },
   email: {
     color: "#fff",

@@ -6,7 +6,7 @@ const AppDownload = () => {
     <div className="app-download">
       <div className="app-banner">
         <h2>
-          <span className="highlight">Bluestock App 2.0  </span> is Live Now!
+          <span className="highlights">Bluestock App 2.0  </span>  is Live Now!
         </h2>
         <p className="download-text">Download Our App</p>
         <div className="store-buttons">

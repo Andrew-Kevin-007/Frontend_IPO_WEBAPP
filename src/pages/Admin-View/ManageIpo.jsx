@@ -91,6 +91,7 @@ const ManageIpo = () => {
           <UserProfile>
           <AiOutlineUser /> Hi, {user.name} {/* Display user's name */}
           </UserProfile>
+          <AddButton  ><a href="/Registeripo">Register IPO</a></AddButton>
         </Header>
         <Title>Upcoming IPO | Dashboard</Title>
         <Table>
@@ -358,16 +359,19 @@ const Status = styled.span`
 `;
 
 const AddButton = styled.button`
-  background: #28a745;
-  color: white;
+  background: rgba(221, 228, 240, 1);
+  color: rgba(90, 106, 207, 1);
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-left: 10px;
+  height:52px;
 
+  
   &:hover {
-    background: #218838;
+    background: rgba(65, 188, 99, 1);
+    color : rgba(221, 228, 240, 1);
   }
 
   @media (max-width: 768px) {

@@ -55,7 +55,7 @@ const SignUp = () => {
   };
 
   return (
-    <div style={{
+  <div style={{
       width: "100%",
       height: "100%",
       paddingLeft: "650px",
@@ -127,7 +127,7 @@ const Container = styled.div`
   // margin: auto;
   text-align: center;
   padding: 100px 20px;
-  
+  width: 100%
 `;
 
 const Logo = styled.img`

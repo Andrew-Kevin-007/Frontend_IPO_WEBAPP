@@ -199,7 +199,7 @@ const RegisterIpo = () => {
               <label>Company Logo</label>
               <CompanyLogo>
                 <img
-                  src={logoUrl || "logo-placeholder.png"}
+                  src={logoUrl || "https://vygrnews.com/uploader/NSE_1677158127.png"}
                   alt="Company Logo"
                 />
                 <div>
@@ -209,9 +209,9 @@ const RegisterIpo = () => {
                     style={{ display: "none" }}
                     onChange={handleLogoChange}
                   />
-                  <label htmlFor="logo-upload" className="upload">
+                  <Button htmlFor="logo-upload" className="upload">
                     Upload Logo
-                  </label>
+                  </Button>
                   <Button className="delete" onClick={() => setLogo(null)}>
                     Delete
                   </Button>
@@ -219,7 +219,7 @@ const RegisterIpo = () => {
               </CompanyLogo>
             </FormGroup>
 
-            <FormGroup>
+            <FormGroup >
               <label>Company Name</label>
               <Input
                 type="text"
@@ -227,6 +227,13 @@ const RegisterIpo = () => {
                 onChange={(e) => setCompanyName(e.target.value)}
                 required
               />
+              {/* <label >Price Band</label>
+              <Input
+                type="text"
+                value={companyName}
+                onChange={(e) => setCompanyName(e.target.value)}
+                required
+              /> */}
             </FormGroup>
 
             <FormGroupGrid>
@@ -299,7 +306,7 @@ const RegisterIpo = () => {
               </div>
             </FormGroupGrid>
 
-            <h3>New Listed IPO Details (When IPO Gets Listed)</h3>
+            <h3 className="text-[22px] font-semibold m-3 mt-3.5">New Listed IPO Details (When IPO Gets Listed)</h3>
             <FormGroupGrid>
               <div>
                 <label>IPO Price</label>
@@ -376,7 +383,7 @@ const RegisterIpo = () => {
 
         {/* Display IPO List */}
         <div style={{ marginTop: "20px" }}>
-          <h2>IPO List</h2>
+          <h2></h2>
           <ul>
             {ipos.map((ipo) => (
               <li key={ipo._id} style={{ marginBottom: "10px" }}>
@@ -412,6 +419,7 @@ const Container = styled.div`
 
 const Sidebar = styled.aside`
   width: 250px;
+  color:rgba(0, 0, 0, 1);
   background: #f4f4f4;
   padding: 20px;
   position: fixed;
@@ -439,7 +447,7 @@ const Overlay = styled.div`
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   display: none;
-
+  
   @media (max-width: 768px) {
     display: block;
   }
@@ -449,29 +457,35 @@ const Logo = styled.div`
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
+  height: 64px;
+  width : 64px;
 `;
 
 const Menu = styled.ul`
   list-style: none;
   padding: 0;
+  
 `;
 
 const MenuItem = styled.li`
   padding: 10px;
   cursor: pointer;
+  
   &:hover,
   &.active {
     background: #ddd;
-    border-radius: 5px;
+    border-radius: 7px;
   }
 `;
 
 const OtherMenu = styled.div`
   margin-top: 20px;
+  
 `;
 
 const MainContent = styled.main`
   flex: 1;
+  color:rgba(0, 0, 0, 1);
   padding: 20px;
   background: #fff;
   transition: margin-left 0.3s ease;
@@ -495,7 +509,7 @@ const MenuButton = styled.button`
   border: none;
   font-size: 24px;
   cursor: pointer;
-
+  
   @media (min-width: 768px) {
     display: none;
   }
@@ -504,6 +518,7 @@ const MenuButton = styled.button`
 const SearchBar = styled.div`
   display: flex;
   align-items: center;
+  rgba(0, 0, 0, 0.5);
   background: #eee;
   padding: 5px 10px;
   border-radius: 4px;
@@ -525,16 +540,19 @@ const UserProfile = styled.div`
 const FormSection = styled.section`
   padding: 20px;
   background: #fff;
+  
 `;
 
 const FormGroup = styled.div`
   margin-bottom: 15px;
+  
 `;
 
 const FormGroupGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  
 
   div {
     flex: 1;
@@ -548,21 +566,21 @@ const FormGroupGrid = styled.div`
 
 const Input = styled.input`
   padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
 `;
 
 const Select = styled.select`
   padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
 `;
 
 const ButtonGroup = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 90px;
 `;
 
 const Button = styled.button`
@@ -570,17 +588,34 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   &.register {
-    background: #28a745;
-    color: white;
+    background: rgba(79, 128, 225, 1);
+    color: rgba(255, 255, 255, 1);
   }
   &.cancel {
-    background: #dc3545;
-    color: white;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(79, 128, 225, 1);
+    border: 2px solid rgba(79, 128, 225, 1);
   }
+
+  &.delete {
+  background: rgba(255, 255, 255, 1);
+    color: rgba(79, 128, 225, 1);
+    border: 2px solid rgba(79, 128, 225, 1);
+    height:37px;
+    width: 99px;
+  }
+
+  &.upload {
+    background: rgba(79, 128, 225, 1);
+    color: rgba(255, 255, 255, 1);
+    height:67px;
+    width: 103px;
 `;
 
 const CompanyLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width:294px;
+  height:294px;
 `;

@@ -22,7 +22,7 @@
   }
   
   .broker-card {
-    background: linear-gradient(to bottom, #00c9ff, #92fe9d);
+    background: linear-gradient(to bottom, rgba(129, 241, 221, 1), rgba(247, 254, 253, 1));
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -31,8 +31,9 @@
   }
   
   .broker-logo {
-    width: 40px;
+    width: 50px;
     margin-bottom: 10px;
+    padding-left: 9px;
   }
   
   .complaints-chart {

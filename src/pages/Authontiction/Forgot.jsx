@@ -22,7 +22,7 @@ const Forgot = () => {
   };
 
   return (
-    <div style={{
+   <div style={{
       width:"100%",
       height:"100%",
       paddingLeft:"700px",
@@ -77,7 +77,7 @@ const Title = styled.h2`
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
-  padding-left: 90px;
+  padding-left: 50px;
   line-height:40px;
   color:rgba(25, 29, 35, 1);
 `;
@@ -86,6 +86,7 @@ const Subtitle = styled.p`
   font-size: 18px;
   color: rgba(102, 102, 102, 1);
   margin-bottom: 20px;
+  
 `;
 
 const Form = styled.div`

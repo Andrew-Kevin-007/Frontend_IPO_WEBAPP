@@ -1,149 +1,98 @@
-.broker-compare-container {
-    display: flex;
-    background: #fff;
-    width: 95%;
-    margin-top: 8%;
-  }
+.main-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 1600px;
+  padding-top: 95px;
+  padding-right: 500px;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.comparison {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
   
-  .side-nav {
-    width: 200px;
-    background: #f8f9fa;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-  }
-  
-  .side-nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .side-nav li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .comparison-header {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap; 
-  }
-  
-  .broker-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 250px;
-  }
-  
-  .broker-logo {
-    width: 60px;
-    height: auto;
-  }
-  
-  .rating {
-    color: #f4b400;
-    font-size: 20px;
-  }
-  
-  .vs-circle {
-    background: black;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-  }
-  
-  /* Tables */
-  .custom-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-  
-  .custom-table th {
-    background: #2563eb;
-    color: white;
-  }
-  
-  /* 📱 Responsive Styles */
-  @media (max-width: 768px) {
-    .broker-compare-container {
-      flex-direction: column; 
-      align-items: center;
-      width: 100%;
-      margin-top: 50px;
-    }
-  
-    .side-nav {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid #ddd;
-      padding: 10px;
-    }
-  
-    .side-nav ul {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-  
-    .side-nav li {
-      flex: 1;
-      text-align: center;
-      padding: 10px;
-    }
-  
-    .comparison-header {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .broker-card {
-      width: 90%;
-      max-width: 300px;
-    }
-  
-    .vs-circle {
-      margin: 10px auto;
-    }
-  
-    .custom-table {
-      display: block;
-      overflow-x: auto;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .side-nav ul {
-      flex-direction: column;
-    }
-  
-    .broker-card {
-      width: 100%;
-      max-width: 250px;
-    }
-  
-    .vs-circle {
-      font-size: 14px;
-      padding: 8px;
-    }
-  
-    .custom-table th,
-    .custom-table td {
-      font-size: 14px;
-      padding: 8px;
-    }
-  }
-  
+}
+
+.broker-card {
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 380px;
+  height: 460px;
+}
+
+.broker-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.stars {
+  font-size: 12px;
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+button {
+  background-color: rgba(69, 187, 188, 1);
+  border: none;
+  padding: 2px 2px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}

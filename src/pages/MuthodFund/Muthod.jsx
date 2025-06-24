@@ -2,28 +2,45 @@ import React from "react";
 
 const fundCategories = ["Equity", "Debt", "Hybrid", "Commodity", "Other"];
 
-const mutualFunds = [
-  {
-    name: "Canara Rob Bluechip Equity Fund",
-    aum: "₹ 10,816.61 Cr.",
-    expenseRatio: "0.5%",
-    cagr: "18.48%",
-    logo: "https://s3-alpha-sig.figma.com/img/a07e/bbec/0aa130a09c63d7cba126801ceb49abfb?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=PsJJZfJnRPGt1X3k9ZjJKG314wZJW9JyDc6C1S-j0YtM6EzeK3VIRUMYBAqHYX0zH1M2iJG7faYkuwmdq3r92DwCFHywJ812te8ua9wr3ItdcHP1gxgHUGGtFX85DGo6LiHAkLas5VIa6PoAKsxn01EFN4O3wQvzduZcf7HeA~-a5EZM7Q8cx9u1qXTSplhKuU-UxV1DCB5Cc1jfLFBoISDjAbNa~4YJtj76pokynBp32pX8hNHdrmCQfze3QFSUWjZexXn382tBmatTpEOCG-wO0r4CS-Kg29OFkcxvHqfqXpe7oeTOOhbunINbg4ekGsMVguiu3d1bd8zaczXQvA__",
-    performance: "The fund’s annualised performance has been 15.3% since inception.",
-    risk: "The fund has been categorised as Very High by SEBI and has a standard deviation of 9.09% vs its category average of 9.61%.",
-    composition: "Large Cap makes up for the majority of the fund at 89.57% along with the largest allocation towards Private Banks at 22.27%.",
-  },
-  {
-    name: "Baroda BNP Paribas Large Cap Fund",
-    aum: "₹ 1,693.42 Cr.",
-    expenseRatio: "0.92%",
-    cagr: "18.19%",
-    logo: "https://s3-alpha-sig.figma.com/img/3f19/a099/bac31a3e4a95fee49bf5ba6b2f8ddc8f?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=firomzP79qzbeJ64S-7G~kNVK6vIkmMvZW-sVh2gpItLpM0NLdODGDUOx8uLWb4~dn5n0DoVOC6lvZd8s8TXEQETVgZot~0WIwPe2-yDURR2mHM10uMeDpeelqCGDgV3mtMS1Wmhypfk~7b07mCdXQkoyoyWoJ1-nRiFo3aw54UVWY3s0WvaccHyyMam4tW3aGQeUndG5nKS3-5XxQx8y9vVvCLXtJybeyPOxRvCv8iJ3tXnbeoX5RqnE50~FmIL252HtYEqVhUb0~dzlj5nA8iDzfRc9w0SMqAU9vO0dsuA9IxlKtRGdOMjLCHKrDqhK9ubagqJhKHDddTSGClE8w__",
-    performance: "The fund’s annualised performance has been 15.3% since inception.",
-    risk: "The fund has been categorised as Very High by SEBI and has a standard deviation of 9.05% vs its category average of 9.61%.",
-    composition: "Large Cap makes up for the majority of the fund at 78.74% along with the largest allocation towards Private Banks at 18.98%.",
-  },
-];
+const MutualFundCard = ({ logo, name, aum, expense, cagr, performance, risk, deviation, categoryAvg, allocation, privateBank }) => {
+  return (
+    <div className="bg-white shadow-md rounded-lg p-4 mb-4 border border-gray-200 w-[1200px]">
+      {/* Header */}
+      <div className="flex items-start justify-between">
+        <div className="flex items-center">
+          <img src={logo} alt={name} className="w-12 h-12 mr-4" />
+          <div className="flex gap-5">
+            <h2 className="text-[20px] font-semibold">{name}</h2>
+            <p className="text-[20px] text-gray-600">AUM ₹ {aum} Cr.</p>
+            <p className="text-[20px] text-gray-600">Expense Ratio {expense}%</p>
+          </div>
+        </div>
+        <div className="text-right">
+          <p className="text-[20px] text-gray-500">5Y CAGR</p>
+          <p className="text-green-600 font-semibold">{cagr}% ▲</p>
+        </div>
+      </div>
+
+      {/* Details */}
+      <div className="mt-4 space-y-2 text-sm">
+        <div>
+          <h3 className="font-bold text-gray-700 text-[20px]">📈 Performance</h3>
+          <p>The fund’s annualised performance has been <strong>{performance}%</strong> since inception.</p>
+        </div>
+
+        <div>
+          <h3 className="font-bold text-[20px] text-gray-700">🚨 Risk</h3>
+          <p>The fund has been categorised as <strong>Very High</strong> by SEBI and has a standard deviation of <strong>{deviation}%</strong> vs its category average of {categoryAvg}%.</p>
+        </div>
+
+        <div>
+          <h3 className="font-bold text-[20px] text-gray-700">🎯 Composition</h3>
+          <p>Large Cap makes up <strong>{allocation}%</strong> of the fund with the largest allocation towards Private Banks at <strong>{privateBank}%</strong>.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const MutualFund = () => {
   return (
@@ -51,23 +68,46 @@ const MutualFund = () => {
           ))}
         </div>
 
-        <div className="fundsContainer">
-          {mutualFunds.map((fund, index) => (
-            <div key={index} className="fundCard">
-              <div className="fundHeader">
-                <img src={fund.logo} alt={fund.name} className="logo" />
-                <div>
-                  <h3 className="fundName">{fund.name}</h3>
-                  <p><strong>AUM:</strong> {fund.aum} &nbsp;&nbsp; <strong>Expense Ratio:</strong> {fund.expenseRatio}</p>
-                  <p className="cagr"><strong>5Y CAGR:</strong> <span className="greenText">▲ {fund.cagr}</span></p>
-                </div>
-              </div>
-              <hr className="divider" />
-              <p><strong>Performance:</strong> {fund.performance}</p>
-              <p className="risk"><strong>Risk:</strong> {fund.risk}</p>
-              <p><strong>Composition:</strong> {fund.composition}</p>
-            </div>
-          ))}
+        <div className="p-6 max-w-2xl mx-auto">
+          <MutualFundCard
+            logo="https://img.smartspends.com/static/images/amc_logo/canara-robeco.png"
+            name="Canara Rob Bluechip Equity Fund"
+            aum="10,816.61"
+            expense="0.5"
+            cagr="18.48"
+            performance="15.3"
+            risk="Very High"
+            deviation="9.09"
+            categoryAvg="9.61"
+            allocation="89.57"
+            privateBank="22.27"
+          />
+          <MutualFundCard
+            logo="https://th.bing.com/th/id/OIP.8CcrblzmysqZ7unseMSk3wAAAA?w=142&h=150&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            name="Baroda BNP Paribas Large Cap Fund"
+            aum="1,693.42"
+            expense="0.92"
+            cagr="18.19"
+            performance="15.3"
+            risk="Very High"
+            deviation="9.05"
+            categoryAvg="9.61"
+            allocation="78.74"
+            privateBank="18.98"
+          />
+          <MutualFundCard
+            logo="https://assets.upstox.com/content/assets/images/fundhouse/0C00001QYY.png"
+            name="Nippon India Large Cap Fund"
+            aum="18,071.87"
+            expense="0.82"
+            cagr="18.33"
+            performance="16.79"
+            risk="Very High"
+            deviation="9.67"
+            categoryAvg="9.62"
+            allocation="79.82"
+            privateBank="21.48"
+          />
         </div>
       </div>
 
@@ -76,6 +116,8 @@ const MutualFund = () => {
           font-family: Arial, sans-serif;
           padding: 20px;
           margin-top: 6%;
+          padding-top: 90px;
+          width : 100;
         }
         .header {
           display: flex;
@@ -85,20 +127,26 @@ const MutualFund = () => {
           padding: 20px;
           border-radius: 10px;
           flex-wrap: wrap;
+          width : 1500px;
+          height: 422px;
         }
         .title {
-          font-size: 28px;
+          width : 875px;
+          font-size: 71px;
           font-weight: bold;
+          color : rgba(0, 0, 0, 1);
         }
         .description {
-          font-size: 14px;
-          color: #555;
-          max-width: 600px;
+          font-size: 21px;
+          color: rgba(0, 0, 0, 1);
+          max-width: 760px;
         }
         .sectionTitle {
-          font-size: 22px;
+          font-size: 41px;
           font-weight: bold;
           margin-top: 30px;
+          text-align: center;
+          padding-left : 450px;
         }
         .content {
           display: flex;
@@ -111,10 +159,12 @@ const MutualFund = () => {
           padding: 15px;
           border-radius: 10px;
           width: 100%;
-          max-width: 200px;
+          
+          max-width: 300px;
+          
         }
         .category {
-          font-size: 16px;
+          font-size: 20px;
           padding: 10px;
           border-bottom: 1px solid #ccc;
           cursor: pointer;
