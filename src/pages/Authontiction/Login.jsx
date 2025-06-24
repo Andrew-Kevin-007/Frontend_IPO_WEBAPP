@@ -69,7 +69,7 @@ const Login = () => {
           Password <ForgotPassword href="/forgot">Forgot Password?</ForgotPassword>
         </Label>
         <PasswordWrapper>
-          <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required placeholder="••••••••••••••"/>
           <EyeIcon>👁</EyeIcon>
         </PasswordWrapper>
 
@@ -157,7 +157,7 @@ const PasswordWrapper = styled.div`
 const EyeIcon = styled.span`
   position: absolute;
   right: 10px;
-  top: 12px;
+  top: 1px;
   cursor: pointer;
 `;
 

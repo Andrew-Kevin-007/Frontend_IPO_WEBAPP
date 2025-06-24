@@ -56,64 +56,65 @@ const SignUp = () => {
 
   return (
     <div style={{
-      width:"400px",
-      height:"764px",
-      paddingLeft:"700px",
-      gap:"36px",
+      width: "100%",
+      height: "100%",
+      paddingLeft: "650px",
+      gap: "36px",
     }}>
-    <Container>
-      
+      <Container>
 
-      <Form onSubmit={handleSignUp}>
-        <Logo src="https://bluestock.in/static/assets/logo/logo.jpg" alt="Bluestock Logo" style={{
-        width:"290px",
-        height:"36px",
-      }}/>
-      <Title>Create an account</Title>
-      {error && <ErrorMessage>{error}</ErrorMessage>}
-      {success && <SuccessMessage>{success}</SuccessMessage>}
-        <Label>Name</Label>
-        <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your Name" />
 
-        <Label>Email Address</Label>
-        <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="hello@bluestock.in" />
+        <Form onSubmit={handleSignUp}>
+          <Logo src="https://bluestock.in/static/assets/logo/logo.jpg" alt="Bluestock Logo" style={{
+            width: "290px",
+            height: "36px",
+          }} />
+          <Title>Create an account</Title>
+          {error && <ErrorMessage>{error}</ErrorMessage>}
+          {success && <SuccessMessage>{success}</SuccessMessage>}
+          <Label>Name</Label>
+          <Input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your Name" />
 
-        <Label>Password</Label>
-        <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••••••••" />
+          <Label>Email Address</Label>
+          <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="hello@bluestock.in" />
 
-        <p style={{
-          fontSize:"14px",
-          fontWeight:"300",
-          lineHeight:"20px",
-          color:"rgba(25, 29, 35, 1)",
-          textAlign:"start",
-        }}>By continuing, you agree to our terms of service.</p>
+          <Label>Password</Label>
+          <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••••••••" />
 
-        <ReCAPTCHA>
-          <Checkbox type="checkbox" checked={isRobotChecked} onChange={() => setIsRobotChecked(!isRobotChecked)} />
-          I'm not a robot
-        </ReCAPTCHA>
+          <p style={{
+            fontSize: "14px",
+            fontWeight: "300",
+            lineHeight: "20px",
+            color: "rgba(25, 29, 35, 1)",
+            textAlign: "start",
+          }}>By continuing, you agree to our terms of service.</p>
 
-        <SignUpButton type="submit">Sign up</SignUpButton>
-        <p style={{
-          color:"gray",
-          padding:"8px",
-          gap:"8px",
-          fontSize:"14px",
-        }}>or sign up with</p>
+          <ReCAPTCHA>
+            <Checkbox type="checkbox" checked={isRobotChecked} onChange={() => setIsRobotChecked(!isRobotChecked)} />
+            I'm not a robot
+          </ReCAPTCHA>
 
-        <p style={{
+          <SignUpButton type="submit">Sign up</SignUpButton>
+          <Divider>or sign in with</Divider>
+
+          {/* <p style={{
           color:"gray",
           padding:"8px",
           gap:"8px",
           fontSize:"20px",
-        }}>Continue with Google</p>
+        }}>Continue with Google</p> */}
+          <GoogleButton>
+            <GoogleIcon><img src="https://th.bing.com/th/id/OIP.TqeyCH3WdV8fYko0lRlw4AHaHa?w=189&h=189&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Google" className="google" style={{
+              width: "24px",
+              height: "24px",
+            }} /></GoogleIcon> Continue with Google
+          </GoogleButton>
 
-      </Form>
-      
-    </Container>
+        </Form>
+
+      </Container>
     </div>
-   
+
 
   );
 };
@@ -139,7 +140,7 @@ const Title = styled.h2`
   font-weight: bold;
   margin-bottom: 20px;
   color: rgba(25, 29, 35, 1);
-  padding-left: 80px;
+  padding-left: 40px;
   line-height: 28px;
 `;
 
@@ -210,4 +211,46 @@ const SuccessMessage = styled.p`
   color: green;
   font-size: 14px;
   margin-top: 10px;
+`;
+
+const GoogleButton = styled.button`
+  width: 100%;
+  padding: 10px;
+  background: #f1f1f1;
+  color: rgba(75, 87, 104, 1);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    background: #ddd;
+  }
+`;
+
+const GoogleIcon = styled.span`
+  margin-right: 8px;
+//   width:10px;
+//   height:10px;
+// `;
+
+
+const Divider = styled.div`
+  margin: 15px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  border-bottom: 1px solid #ddd;
+  line-height: 0.1em;
+  width: 100%;
+  position: relative;
+
+  &:before {
+    content: " ";
+    display: block;
+  }
 `;
